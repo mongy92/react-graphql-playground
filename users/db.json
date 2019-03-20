@@ -1,13 +1,33 @@
 {
-    "users" : [
-        {"id" : "0", "firstName" : "Ahmed", "age" : 26, "companyId":"0"},
-        {"id" : "1", "firstName" : "Amira", "age" : 17, "companyId":"1"},
-        {"id" : "2", "firstName" : "Esraa", "age" : 18, "companyId":"1"}
-
-    ],
-    "companies":[
-        {"id":"0" , "name":"Apple" , "description" :"Iphone"},
-        {"id":"1" , "name":"Google" , "description" :"Search"}
-
-    ]
+  "users": [
+    {
+      "id": "1",
+      "firstName": "TOTO",
+      "age": 79,
+      "companyId": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Esraa",
+      "age": 18,
+      "companyId": "1"
+    },
+    {
+      "firstName": "Hema",
+      "age": 25,
+      "id": "pZXbAWI"
+    }
+  ],
+  "companies": [
+    {
+      "id": "0",
+      "name": "Apple",
+      "description": "Iphone"
+    },
+    {
+      "id": "1",
+      "name": "Google",
+      "description": "Search"
+    }
+  ]
 }
