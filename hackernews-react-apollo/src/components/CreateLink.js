@@ -17,7 +17,6 @@ const POST_MUTATION = gql`
 class CreateLink extends Component {
     state = {
         description: '',
-        loading,
         url: '',
     }
 
@@ -41,7 +40,10 @@ class CreateLink extends Component {
                         placeholder="The URL for the link"
                     />
                 </div>
-                <Mutation mutation={POST_MUTATION} variables={{ url, description }}>
+                <Mutation 
+                    mutation={POST_MUTATION}
+                    onCompleted={ ()=> this.props.history.push("/")}
+                    variables={{ url, description }}>
                     {
                         (
                             postMutation,

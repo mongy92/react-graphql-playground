@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import { ApolloProvider } from "react-apollo";
 import { ApolloClient, InMemoryCache, HttpLink } from "apollo-boost";
+import { BrowserRouter } from 'react-router-dom'
 
 
 const httpLink = new HttpLink({
@@ -18,9 +19,12 @@ const client = new ApolloClient({
 })
 
 ReactDOM.render(
-    <ApolloProvider client={client} >
-        <App />
-    </ApolloProvider>
+    <BrowserRouter>
+        <ApolloProvider client={client} >
+            <App />
+        </ApolloProvider>
+    </BrowserRouter>
+
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
